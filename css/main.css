@@ -623,14 +623,6 @@ header {
   align-items: center;
 }
 
-.team__section {
-  background-color: #f5f4fa;
-}
-
-.team {
-  display: flex;
-}
-
 .team__title {
   font-weight: 700;
   font-size: 36px;
@@ -639,6 +631,10 @@ header {
   text-align: center;
   margin-bottom: 50px;
   color: var(--secondary-title-color);
+}
+
+.team {
+  display: flex;
 }
 
 .card__item {
@@ -653,7 +649,6 @@ header {
 .team__desk {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #ffffff;
 }
 
 .card__title {
@@ -682,6 +677,10 @@ header {
   justify-content: center;
   align-items: center;
   background-color: var(--accent-color);
+}
+
+.team {
+  background-color: var(--third-background-color);
 }
 
 .clients__title {
