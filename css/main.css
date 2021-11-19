@@ -623,6 +623,10 @@ header {
   align-items: center;
 }
 
+.team__section {
+  background-color: #f5f4fa;
+}
+
 .team__title {
   font-weight: 700;
   font-size: 36px;
@@ -640,6 +644,7 @@ header {
 .card__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 
 .card__item:not(:last-child) {
@@ -679,10 +684,6 @@ header {
   background-color: var(--accent-color);
 }
 
-.team {
-  background-color: var(--third-background-color);
-}
-
 .clients__title {
   text-align: center;
   font-weight: 700;
@@ -699,7 +700,7 @@ header {
   justify-content: center;
 }
 
-.clients:not(:first-child) {
+.clients__item:not(:first-child) {
   margin-left: auto;
 }
 
@@ -734,14 +735,9 @@ header {
   transition-delay: 0ms;
 }
 
-.client__icon .client--link:hover .client__icon,
-.client__icon .client--link:focus .client__icon {
+.client__link:hover .client__icon,
+.client__link:focus .client__icon {
   fill: var(--accent-color);
-}
-
-.client--icon:focus,
-.client--icon:hover {
-  color: var(--accent-color);
 }
 
 .client--icon {

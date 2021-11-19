@@ -12,10 +12,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  &:not(:first-child) {
-    margin-left: auto;
-  }
+.clients__item:not(:first-child) {
+  margin-left: auto;
 }
 
 .client__link {
@@ -50,16 +50,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
-
-  .client--link:hover .client__icon,
-  .client--link:focus .client__icon {
-    fill: var(--accent-color);
-  }
 }
 
-.client--icon:focus,
-.client--icon:hover {
-  color: var(--accent-color);
+.client__link:hover .client__icon,
+.client__link:focus .client__icon {
+  fill: var(--accent-color);
 }
 
 .client--icon {
