@@ -1,0 +1,46 @@
+.busyness__section {
+  padding-top: 0;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.76;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
+  text-align: center;
+
+  color: var(--secondary-title-color);
+}
+
+.busyness {
+  display: flex;
+  margin-top: 50px;
+}
+
+.busyness__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.busyness__item {
+  position: relative;
+  display: flex;
+}
+
+.busyness__text {
+  position: absolute;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

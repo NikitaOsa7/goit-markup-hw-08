@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <!-----header------>
+    <header class="header">
+      <div class="container container__header">
+        <a href="#" class="logo header__logo"
+          ><span class="logo__dark">Web</span>Studio</a
+        >
+        <nav class="navigation">
+          <ul class="list navigation__list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link navigation--link">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link navigation--link current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link navigation--link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+          <ul class="list contacts container__header">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link contacts--link">
+                <svg class="contacts__icon contacts--icon" width="16" height="12">
+                  <use href="./img/sprite-connect.svg#icon-mail"></use>
+                </svg>info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link contacts--link">
+                <svg class="contacts__icon contacts--icon" width="10" height="16">
+                  <use href="./img/sprite-connect.svg#icon-tel"></use>
+                </svg>+38 096-111-11-11
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-----examples------>
+    <main>
+      <section class="section">
+        <div class="container">
+          <ul class="list filter">
+            <li class="filter__item">
+              <button type="button" class="btn filter__button">Все</button>
+            </li>
+            <li class="filter__item">
+              <button type=" button" class="btn filter__button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="btn filter__button">
+                Приложения
+              </button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="btn filter__button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="btn filter__button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="list example">
+            <li class="example__item">
+              <a href="#" class="example__link link">
+                <div class="example__wrap">
+                  <img
+                    src="./img/technokryak-1.jpg"
+                    alt="Ноутбук с изображенным сайтом"
+                  />
+                  <p class="example__text">
+                    Технокряк это современная площадка распространения
+                    коронавируса. Компании используют эту платформу для
+                    цифрового шпионажа и атак на защищённые сервера конкурентов.
+                  </p>
+                </div>
+                <div class="example__description">
+                  <h2 class="img__title">Технокряк</h2>
+                  <p class="img__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a href="#" class="example__link link">
+                <div class="example__wrap">
+                  <img src="./img/poster-2.jpg" alt="Баскетболисты" />
+                  <p class="example__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    praesentium at expedita voluptates corrupti cum, facilis
+                    recusandae nostrum. Nesciunt porro doloribus adipisci ut
+                    perspiciatis quidem, eius inventore ducimus mollitia quae.
+                  </p>
+                </div>
+                <div class="example__description">
+                  <h2 class="img__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="img__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a href="#" class="example__link link">
+                <div class="example__wrap">
+                  <img src="./img/seafood-3.jpg" alt="Логотип ресторана" />
+                  <p class="example__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    praesentium at expedita voluptates corrupti cum, facilis
+                    recusandae nostrum. Nesciunt porro doloribus adipisci ut
+                    perspiciatis quidem, eius inventore ducimus mollitia quae.
+                  </p>
+                </div>
+                <div class="example__description">
+                  <h2 class="img__title">Ресторан Seafood</h2>
+                  <p class="img__description">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a href="#" class="example__link link">
+                <div class="example__wrap">
+                  <img src="./img/prime-4.jpg" alt="Наушники" />
+                  <p class="example__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Asperiores maiores qui recusandae quo numquam quidem nemo,
+                    eaque architecto saepe harum ducimus soluta error? Tempore
+                    laborum dolore temporibus error, ex vel?
+                  </p>
+                </div>
+                <div class="example__description">
+                  <h2 class="img__title">Проект Prime</h2>
+                  <p class="img__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a href="#" class="example__link link">
+                <div class="example__wrap">
+                  <img src="./img/boxes-5.jpg" alt="Две коробки" />
+                  <p class="example__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Asperiores maiores qui recusandae quo numquam quidem nemo,
+                    eaque architecto saepe harum ducimus soluta error? Tempore
+                    laborum dolore temporibus error, ex vel?
+                  </p>
+                </div>
+                <div class="example__description">
+                  <h2 class="img__title">Проект Boxes</h2>
+                  <p class="img__description">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a href="#" class="example__link link">
+                <div class="example__wrap">
+                  <img src="./img/inspiration-6.jpg" alt="Компьютер" />
+                  <p class="example__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Asperiores maiores qui recusandae quo numquam quidem nemo,
+                    eaque architecto saepe harum ducimus soluta error? Tempore
+                    laborum dolore temporibus error, ex vel?
+                  </p>
+                </div>
+                <div class="example__description">
+                  <h2 class="img__title">Inspiration has no Borders</h2>
+                  <p class="img__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a href="#" class="example__link link">
+                <div class="example__wrap">
+                  <img src="./img/izdaniye-7.jpg" alt="Журнал" />
+                  <p class="example__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Asperiores maiores qui recusandae quo numquam quidem nemo,
+                    eaque architecto saepe harum ducimus soluta error? Tempore
+                    laborum dolore temporibus error, ex vel?
+                  </p>
+                </div>
+                <div class="example__description">
+                  <h2 class="img__title">Издание Limited Edition</h2>
+                  <p class="img__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a href="#" class="example__link link">
+                <div class="example__wrap">
+                  <img src="./img/lab-8.jpg" alt="Бирка" />
+                  <p class="example__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Asperiores maiores qui recusandae quo numquam quidem nemo,
+                    eaque architecto saepe harum ducimus soluta error? Tempore
+                    laborum dolore temporibus error, ex vel?
+                  </p>
+                </div>
+                <div class="example__description">
+                  <h2 class="img__title">Проект LAB</h2>
+                  <p class="img__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="example__item">
+              <a href="#" class="example__link link">
+                <div class="example__wrap">
+                  <img src="./img/growing-9.jpg" alt="Ноутбук" />
+                  <p class="example__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Asperiores maiores qui recusandae quo numquam quidem nemo,
+                    eaque architecto saepe harum ducimus soluta error? Tempore
+                    laborum dolore temporibus error, ex vel?
+                  </p>
+                </div>
+                <div class="example__description">
+                  <h2 class="img__title">Growing Business</h2>
+                  <p class="img__description">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!----footer---->
+   <footer class="footer">
+        <div class="container container__footer">
+            <div class="special-container__footer">
+                <a href="#" class="link logo__footer"><span class="logo__part">Web</span>Studio</a>
+                <address>
+                    <ul class="list">
+                        <li class="footer__item"><a href="https://goo.gl/maps/i2SUqEGefCtZMEda6" target="_blank"
+                                rel="noopener noreferrer nofollow" class="link adress">г. Киев, пр-т Леси Украинки,
+                                26</a>
+                        </li>
+                        <li class="footer__item"><a href="mailto:info@example.com"
+                                class="link footer__contacts">info@example.com</a></li>
+                        <li class="footer__item"><a href="tel:+380991111111" class="link footer__contacts">+38
+                                099-111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="social__contacts">
+                <h2 class="offer__text">присоединяйтесь</h2>
+                <ul class="social__list list">
+                    <li class="social-item__footer">
+                        <a href="" class="social-link__footer social-link--footer">
+                            <svg class="social-icon__footer" width="20" height="20">
+                                <use href="./img/social-sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item__footer">
+                        <a href="" class="social-link__footer social-link--footer">
+                            <svg class="social-icon__footer" width="20" height="20">
+                                <use href="./img/social-sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item__footer">
+                        <a href="" class="social-link__footer social-link--footer">
+                            <svg class="social-icon__footer" width="20" height="20">
+                                <use href="./img/social-sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item__footer">
+                        <a href="" class="social-link__footer social-link--footer">
+                            <svg class="social-icon__footer" width="20" height="20">
+                                <use href="./img/social-sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="footer__form">
+                <p class="form__text">Подпишитесь на рассылку</p>
+                <div class="footer-form__container">
+                    <label for="" class="footer-form__label">
+                        <input type="text" placeholder="E-mail" class="footer-form__input">
+                    </label>
+                    <button type="submit" class="footer__button form-button__text">Подписаться
+                        <svg class="footer-form__icon">
+                            <use href="./img/sprite.svg#icon-footer-form"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>
