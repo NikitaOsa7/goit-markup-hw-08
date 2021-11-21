@@ -1,56 +1,94 @@
 .hero {
   background-color: var(--hero-primary-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 480px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-position: center;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/background-hero.jpg);
+    url(../img/hero.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 129dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../img/hero@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero-tablet.jpg);
+
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/hero-desktop.jpg);
+
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
-.hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  width: 696px;
-  text-align: center;
-  margin: 0 auto;
+// .hero__title {
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   width: 696px;
+//   text-align: center;
+//   margin: 0 auto;
 
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
 
-  color: var(--primary-title-color);
-}
+//   color: var(--primary-title-color);
+// }
 
-.hero__button {
-  min-width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-  border: transparent;
-  justify-content: center;
+// .hero__button {
+//   min-width: 200px;
+//   height: 50px;
+//   border-radius: 4px;
+//   display: block;
+//   margin: 0 auto;
+//   border: transparent;
+//   justify-content: center;
 
-  margin-top: 30px;
-}
+//   margin-top: 30px;
+// }
 
-.btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+// .btn {
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 1.87;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-}
+//   display: flex;
+//   align-items: center;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   cursor: pointer;
+// }
 
-.button__light {
-  color: var(--secondary-text-color);
-  background-color: var(--secondary-background-color);
-}
+// .button__light {
+//   color: var(--secondary-text-color);
+//   background-color: var(--secondary-background-color);
+// }
