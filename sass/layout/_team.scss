@@ -3,6 +3,7 @@
 }
 
 .team__title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -11,22 +12,35 @@
   margin-bottom: 50px;
 
   color: var(--secondary-title-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .team {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.card__item {
+.team__item {
+  margin-bottom: 30px;
+  background-color: var(--background-color);
+  border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
   }
 
-  background-color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+  }
 }
 
 .team__desk {
