@@ -45,15 +45,15 @@ header {
 
 @media screen and (min-width: 768px) {
   header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   header {
-    padding-top: 25px;
-    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -441,6 +441,9 @@ header {
     border: none;
     background-color: transparent;
   }
+  .burger-btn:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .burger-icon {
@@ -634,8 +637,8 @@ header {
 
 .contacts__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   transition-property: color;
   transition-duration: 250ms;
@@ -647,9 +650,18 @@ header {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .contacts__icon {
   align-items: center;
   justify-content: center;
+  width: 14px;
+  height: 14px;
   margin-right: 10px;
   transition-property: fill;
   transition-duration: 250ms;
@@ -659,6 +671,13 @@ header {
 
 .contacts__icon:hover, .contacts__icon:focus {
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__icon {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .hero {
@@ -676,9 +695,9 @@ header {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 129dpi), (min-resolution: 2dppx) {
-  .hero .box {
-    background-image: url(../img/hero.jpg);
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 129dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero@2x.jpg);
   }
 }
 
@@ -686,8 +705,14 @@ header {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet.jpg);
     max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 129dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-tablet@2x.jpg);
   }
 }
 
@@ -699,6 +724,61 @@ header {
     max-width: 1600px;
     height: 600px;
   }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 129dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-desktop@2x.jpg);
+  }
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  width: 360px;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
+}
+
+.hero__button {
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  border: transparent;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.button__light {
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-background-color);
 }
 
 .features {

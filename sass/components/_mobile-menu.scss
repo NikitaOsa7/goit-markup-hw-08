@@ -7,6 +7,10 @@
 
     border: none;
     background-color: transparent;
+
+    &:focus {
+      fill: var(--accent-color);
+    }
   }
 }
 
