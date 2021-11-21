@@ -612,6 +612,7 @@ header {
   .contacts {
     display: block;
     margin-left: auto;
+    font-size: 12px;
   }
 }
 
@@ -620,6 +621,7 @@ header {
     display: flex;
     align-items: center;
     margin-left: auto;
+    font-size: 14px;
   }
 }
 
@@ -636,6 +638,7 @@ header {
 }
 
 .contacts__link {
+  display: flex;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;

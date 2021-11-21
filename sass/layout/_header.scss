@@ -57,12 +57,14 @@
   @media screen and (min-width: 768px) {
     display: block;
     margin-left: auto;
+    font-size: 12px;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     margin-left: auto;
+    font-size: 14px;
   }
 }
 
@@ -81,6 +83,7 @@
 }
 
 .contacts__link {
+  display: flex;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
