@@ -31,10 +31,16 @@
         <nav class="navigation">
           <ul class="list navigation__list">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__link navigation--link">Студия</a>
+              <a
+                href="./index.html"
+                class="navigation__link navigation--link current"
+                >Студия</a
+              >
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link navigation--link current"
+              <a
+                href="./portfolio.html"
+                class="navigation__link navigation--link"
                 >Портфолио</a
               >
             </li>
@@ -43,20 +49,97 @@
             </li>
           </ul>
         </nav>
-          <ul class="list contacts container__header">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link contacts--link">
-                <svg class="contacts__icon contacts--icon" width="16" height="12">
-                  <use href="./img/sprite-connect.svg#icon-mail"></use>
-                </svg>info@devstudio.com
+
+        <ul class="list contacts">
+          <li class="contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts__link contacts--link"
+            >
+              <svg class="contacts__icon contacts--icon">
+                <use href="./img/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link contacts--link">
+              <svg class="contacts__icon">
+                <use href="./img/sprite.svg#icon-tel"></use>
+              </svg>
+              +38 096-111-11-11
+            </a>
+          </li>
+        </ul>
+
+        <button class="burger-btn" data-menu-open>
+          <svg class="burger-icon">
+            <use href="./img/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+          <button class="close-btn-header" data-menu-close>
+            <svg class="close-btn-icon">
+              <use href="./img/sprite.svg#close-icon-header"></use>
+            </svg>
+          </button>
+          <nav class="navigation-mobile">
+            <ul class="list mobile-navigation__list">
+              <li class="mobile-navigation__item">
+                <a
+                  href="./index.html"
+                  class="
+                    mobile-navigation__link mobile-navigation--link
+                    mobile-current
+                  "
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-navigation__item">
+                <a
+                  href="./portfolio.html"
+                  class="mobile-navigation__link mobile-navigation--link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-navigation__item">
+                <a
+                  href="#"
+                  class="mobile-navigation__link mobile-navigation--link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="list mobile-contacts">
+            <li class="mobile-contacts__item">
+              <a href="tel:+380961111111" class="mobile-contacts__link">
+                +38 096-111-11-11
               </a>
             </li>
-            <li class="contacts__item">
-              <a href="tel:+380961111111" class="contacts__link contacts--link">
-                <svg class="contacts__icon contacts--icon" width="10" height="16">
-                  <use href="./img/sprite-connect.svg#icon-tel"></use>
-                </svg>+38 096-111-11-11
+            <li class="mobile-contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-contacts__link mobile-contacts--link"
+              >
+                info@devstudio.com
               </a>
+            </li>
+          </ul>
+
+          <ul class="mobile-social list">
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link">Instagram</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a href="#" class="mobile-social__link">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -84,17 +167,50 @@
               <button type="button" class="btn filter__button">Дизайн</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="btn filter__button">Маркетинг</button>
+              <button type="button" class="btn filter__button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="list example">
             <li class="example__item">
               <a href="#" class="example__link link">
                 <div class="example__wrap">
-                  <img
-                    src="./img/technokryak-1.jpg"
-                    alt="Ноутбук с изображенным сайтом"
-                  />
+                  <picture class="portfolio__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/technokryak-d-@1x.jpg 1x,
+                        ./img/portfolio/technokryak-d-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/technokryak-t-@1x.jpg 1x,
+                        ./img/portfolio/technokryak-t-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./img/portfolio/technokryak-m-@1x.jpg 1x,
+                        ./img/portfolio/technokryak-m-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="
+                        ./img/portfolio/technokryak-m-@1x.jpg 1x,
+                        ./img/portfolio/technokryak-m-@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="img/portfolio/technokryak-d-@1x.jpg"
+                      alt="Веб-сайт"
+                    />
+                  </picture>
                   <p class="example__text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -110,7 +226,41 @@
             <li class="example__item">
               <a href="#" class="example__link link">
                 <div class="example__wrap">
-                  <img src="./img/poster-2.jpg" alt="Баскетболисты" />
+                  <picture class="portfolio__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/poster-d-@1x.jpg 1x,
+                        ./img/portfolio/poster-d-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/poster-t-@1x.jpg 1x,
+                        ./img/portfolio/poster-t-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./img/portfolio/poster-m-@1x.jpg 1x,
+                        ./img/portfolio/poster-m-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="
+                        ./img/portfolio/poster-m-@1x.jpg 1x,
+                        ./img/portfolio/poster-m-@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="img/portfolio/poster-d-@1x.jpg"
+                      alt="Баскетболисты"
+                    />
+                  </picture>
                   <p class="example__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. In
                     praesentium at expedita voluptates corrupti cum, facilis
@@ -127,7 +277,41 @@
             <li class="example__item">
               <a href="#" class="example__link link">
                 <div class="example__wrap">
-                  <img src="./img/seafood-3.jpg" alt="Логотип ресторана" />
+                  <picture class="portfolio__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/seafood-d-@1x.jpg 1x,
+                        ./img/portfolio/seafood-d-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/seafood-t-@1x.jpg 1x,
+                        ./img/portfolio/seafood-t-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./img/portfolio/seafood-m-@1x.jpg 1x,
+                        ./img/portfolio/seafood-m-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="
+                        ./img/portfolio/seafood-m-@1x.jpg 1x,
+                        ./img/portfolio/seafood-m-@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="img/portfolio/seafood-d-@1x.jpg"
+                      alt="Логотип Ресторана"
+                    />
+                  </picture>
                   <p class="example__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. In
                     praesentium at expedita voluptates corrupti cum, facilis
@@ -144,7 +328,41 @@
             <li class="example__item">
               <a href="#" class="example__link link">
                 <div class="example__wrap">
-                  <img src="./img/prime-4.jpg" alt="Наушники" />
+                  <picture class="portfolio__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/prime-d-@1x.jpg 1x,
+                        ./img/portfolio/prime-d-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/prime-t-@1x.jpg 1x,
+                        ./img/portfolio/prime-t-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./img/portfolio/prime-m-@1x.jpg 1x,
+                        ./img/portfolio/prime-m-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="
+                        ./img/portfolio/prime-m-@1x.jpg 1x,
+                        ./img/portfolio/prime-m-@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="img/portfolio/prime-d-@1x.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Asperiores maiores qui recusandae quo numquam quidem nemo,
@@ -161,7 +379,41 @@
             <li class="example__item">
               <a href="#" class="example__link link">
                 <div class="example__wrap">
-                  <img src="./img/boxes-5.jpg" alt="Две коробки" />
+                  <picture class="portfolio__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/boxes-d-@1x.jpg 1x,
+                        ./img/portfolio/boxes-d-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/boxes-t-@1x.jpg 1x,
+                        ./img/portfolio/boxes-t-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./img/portfolio/boxes-m-@1x.jpg 1x,
+                        ./img/portfolio/boxes-m-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="
+                        ./img/portfolio/boxes-m-@1x.jpg 1x,
+                        ./img/portfolio/boxes-m-@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="img/portfolio/boxes-d-@1x.jpg"
+                      alt="Коробки"
+                    />
+                  </picture>
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Asperiores maiores qui recusandae quo numquam quidem nemo,
@@ -178,7 +430,41 @@
             <li class="example__item">
               <a href="#" class="example__link link">
                 <div class="example__wrap">
-                  <img src="./img/inspiration-6.jpg" alt="Компьютер" />
+                  <picture class="portfolio__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/inspiration-d-@1x.jpg 1x,
+                        ./img/portfolio/inspiration-d-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/inspiration-t-@1x.jpg 1x,
+                        ./img/portfolio/inspiration-t-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./img/portfolio/inspiration-m-@1x.jpg 1x,
+                        ./img/portfolio/inspiration-m-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="
+                        ./img/portfolio/inspiration-m-@1x.jpg 1x,
+                        ./img/portfolio/inspiration-m-@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="img/portfolio/inspiration-d-@1x.jpg"
+                      alt="Монитор"
+                    />
+                  </picture>
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Asperiores maiores qui recusandae quo numquam quidem nemo,
@@ -195,7 +481,41 @@
             <li class="example__item">
               <a href="#" class="example__link link">
                 <div class="example__wrap">
-                  <img src="./img/izdaniye-7.jpg" alt="Журнал" />
+                  <picture class="portfolio__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/limited-d-@1x.jpg 1x,
+                        ./img/portfolio/limited-d-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/limited-t-@1x.jpg 1x,
+                        ./img/portfolio/limited-t-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./img/portfolio/limited-m-@1x.jpg 1x,
+                        ./img/portfolio/limited-m-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="
+                        ./img/portfolio/limited-m-@1x.jpg 1x,
+                        ./img/portfolio/limited-m-@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="img/portfolio/limited-d-@1x.jpg"
+                      alt="Журнал"
+                    />
+                  </picture>
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Asperiores maiores qui recusandae quo numquam quidem nemo,
@@ -212,7 +532,41 @@
             <li class="example__item">
               <a href="#" class="example__link link">
                 <div class="example__wrap">
-                  <img src="./img/lab-8.jpg" alt="Бирка" />
+                  <picture class="portfolio__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/lab-d-@1x.jpg 1x,
+                        ./img/portfolio/lab-d-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/lab-t-@1x.jpg 1x,
+                        ./img/portfolio/lab-t-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./img/portfolio/lab-m-@1x.jpg 1x,
+                        ./img/portfolio/lab-m-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="
+                        ./img/portfolio/lab-m-@1x.jpg 1x,
+                        ./img/portfolio/lab-m-@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="img/portfolio/lab-d-@1x.jpg"
+                      alt="Бирка"
+                    />
+                  </picture>
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Asperiores maiores qui recusandae quo numquam quidem nemo,
@@ -229,7 +583,41 @@
             <li class="example__item">
               <a href="#" class="example__link link">
                 <div class="example__wrap">
-                  <img src="./img/growing-9.jpg" alt="Ноутбук" />
+                  <picture class="portfolio__img">
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/portfolio/growing-buisness-d-@1x.jpg 1x,
+                        ./img/portfolio/growing-buisness-d-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/portfolio/growing-buisness-t-@1x.jpg 1x,
+                        ./img/portfolio/growing-buisness-t-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./img/portfolio/growing-buisness-m-@1x.jpg 1x,
+                        ./img/portfolio/growing-buisness-m-@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 479px)"
+                      srcset="
+                        ./img/portfolio/growing-buisness-m-@1x.jpg 1x,
+                        ./img/portfolio/growing-buisness-m-@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__img"
+                      src="img/portfolio/growing-buisness-d-@1x.jpg"
+                      alt="Ноутбук"
+                    />
+                  </picture>
                   <p class="example__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Asperiores maiores qui recusandae quo numquam quidem nemo,
@@ -248,7 +636,7 @@
       </section>
     </main>
     <!----footer---->
-   <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container container__footer">
             <div class="special-container__footer">
                 <a href="#" class="link logo__footer"><span class="logo__part">Web</span>Studio</a>
@@ -272,28 +660,28 @@
                     <li class="social-item__footer">
                         <a href="" class="social-link__footer social-link--footer">
                             <svg class="social-icon__footer" width="20" height="20">
-                                <use href="./img/social-sprite.svg#icon-instagram"></use>
+                                <use href="./img/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-item__footer">
                         <a href="" class="social-link__footer social-link--footer">
                             <svg class="social-icon__footer" width="20" height="20">
-                                <use href="./img/social-sprite.svg#icon-twitter"></use>
+                                <use href="./img/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-item__footer">
                         <a href="" class="social-link__footer social-link--footer">
                             <svg class="social-icon__footer" width="20" height="20">
-                                <use href="./img/social-sprite.svg#icon-facebook"></use>
+                                <use href="./img/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="social-item__footer">
                         <a href="" class="social-link__footer social-link--footer">
                             <svg class="social-icon__footer" width="20" height="20">
-                                <use href="./img/social-sprite.svg#icon-linkedin"></use>
+                                <use href="./img/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
@@ -315,6 +703,7 @@
             </form>
         </div>
         </div>
-    </footer>
+    </footer> -->
   </body>
+  <script src="./js/menu.js"></script>
 </html>

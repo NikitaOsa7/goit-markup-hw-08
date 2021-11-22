@@ -1,11 +1,24 @@
 /* ----------------------header----------------------- */
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
 .filter__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   border: transparent;
   border-radius: 4px;
-  height: 38px;
   padding: 6px 22px;
 
   text-align: center;
@@ -28,32 +41,54 @@
   border-radius: 4px;
 }
 
-.filter {
-  display: flex;
-  margin-bottom: 50px;
-
-  justify-content: center;
-}
-
 .filter__item {
-  margin-right: 8px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
-.filter__item:last-child {
-  margin: 0;
-}
 /* ----------------------example-list----------------------- */
 .example {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .example__item {
-  margin-top: 30px;
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
+  display: block;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 2 - 15px);
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .example__item:hover .example__text {
@@ -63,6 +98,7 @@
 .example__wrap {
   position: relative;
   overflow: hidden;
+  display: block;
 }
 
 .example__text {
@@ -84,13 +120,13 @@
 }
 
 .example__description {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  border-left: 1px;
-  border-bottom: 1px;
-  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 146px;
+  }
 }
 
 .img__title {
