@@ -52,8 +52,10 @@
 
 .social__list {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .social-item__footer {

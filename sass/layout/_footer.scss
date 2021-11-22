@@ -32,15 +32,27 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
 
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer__form {
   margin-left: 93px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+  }
 }
 
 .form__text {
+  display: block;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -49,6 +61,10 @@
   margin-bottom: 20px;
 
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer-form__label {
@@ -67,6 +83,10 @@
   border-radius: 4px;
   background-color: var(--primary-background-color);
   color: rgba(255, 255, 255, 0.3);
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
 }
 
 .footer__button {
@@ -94,6 +114,10 @@
   letter-spacing: 0.06em;
 
   color: var(--secondary-text-color);
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
 }
 
 .footer-form__icon {
