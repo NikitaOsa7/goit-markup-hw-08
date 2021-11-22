@@ -566,9 +566,7 @@ header {
   color: var(--accent-color);
 }
 
-.mobile-navigation__link:hover,
-.mobile-navigation__link:focus,
-.mobile-navigation__link.current {
+.mobile-current {
   color: var(--accent-color);
 }
 
@@ -1152,11 +1150,12 @@ header {
 
 .footer__form {
   margin-left: 93px;
+  margin-left: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .footer__form {
-    margin-left: auto;
+    margin-left: 93px;
   }
 }
 
@@ -1492,10 +1491,6 @@ header {
   .footer__row {
     margin-bottom: 60px;
   }
-}
-
-.special-container__footer {
-  flex-grow: 1;
 }
 
 @media screen and (max-width: 1199px) {

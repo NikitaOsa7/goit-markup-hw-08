@@ -130,8 +130,6 @@
   color: var(--accent-color);
 }
 
-.mobile-navigation__link:hover,
-.mobile-navigation__link:focus,
-.mobile-navigation__link.current {
+.mobile-current {
   color: var(--accent-color);
 }
