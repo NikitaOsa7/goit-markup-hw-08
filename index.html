@@ -258,13 +258,34 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                src="./img/igor.jpg"
-                alt="Светловолосый мужчина в очках"
-                width="270"
-                height="260"
-                class="card__picture"
-              />
+              <picture class="team__img">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/igor-d-@1x.jpg 1x,
+                    ./img/team/igor-d-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/igor-t-@1x.jpg 1x,
+                    ./img/team/igor-t-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./img/team/igor-m-@1x.jpg 1x,
+                    ./img/team/igor-m-@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./img/team/igor-m-@1x.jpg"
+                  alt="Светловолосый мужчина в очках"
+                  class="card__picture"
+                />
+              </picture>
               <div class="team__desk">
                 <h3 class="card__title">Игорь Демьяненко</h3>
                 <p class="card__position">Product Designer</p>
@@ -301,13 +322,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./img/olga.jpg"
-                alt="Улыбающаяся девушка"
-                width="270"
-                height="260"
-                class="card__picture"
-              />
+              <picture class="team__img">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/olga-d-@1x.jpg 1x,
+                    ./img/team/olga-d-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/olga-t-@1x.jpg 1x,
+                    ./img/team/olga-t-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./img/team/olga-m-@1x.jpg 1x,
+                    ./img/team/olga-m-@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./img/team/olga-m-@1x.jpg"
+                  alt="Светловолосый мужчина в очках"
+                  class="card__picture"
+                />
+              </picture>
               <div class="team__desk">
                 <h3 class="card__title">Ольга Репина</h3>
                 <p class="card__position">Frontend Developer</p>
@@ -344,13 +386,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./img/nikolay.jpg"
-                alt="Темноволосый мужчина"
-                width="270"
-                height="260"
-                class="card__picture"
-              />
+              <picture class="team__img">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/nikolay-d-@1x.jpg 1x,
+                    ./img/team/nikolay-d-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/nikolay-t-@1x.jpg 1x,
+                    ./img/team/nikolay-t-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./img/team/nikolay-m-@1x.jpg 1x,
+                    ./img/team/nikolay-m-@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./img/team/nikolay-m-@1x.jpg"
+                  alt="Светловолосый мужчина в очках"
+                  class="card__picture"
+                />
+              </picture>
               <div class="team__desk">
                 <h3 class="card__title">Николай Тарасов</h3>
                 <p class="card__position">Marketing</p>
@@ -387,13 +450,34 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./img/mikhail.jpg"
-                alt="Темноволосый мужчина в очках"
-                width="270"
-                height="260"
-                class="card__picture"
-              />
+              <picture class="team__img">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team/mikhail-d-@1x.jpg 1x,
+                    ./img/team/mikhail-d-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/team/mikhail-t-@1x.jpg 1x,
+                    ./img/team/mikhail-t-@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./img/team/mikhail-m-@1x.jpg 1x,
+                    ./img/team/mikhail-m-@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./img/team/mikhail-m-@1x.jpg"
+                  alt="Светловолосый мужчина в очках"
+                  class="card__picture"
+                />
+              </picture>
               <div class="team__desk">
                 <h3 class="card__title">Михаил Ермаков</h3>
                 <p class="card__position">UI Designer</p>
@@ -432,54 +516,56 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section section__clients">
-            <div class="container">
-                <h2 class="clients__title">Постоянные клиенты</h2>
-                <ul class="list clients">
-                    <li class="clients__item">
-                        <a href="#" class="client__link client--link link">
-                            <svg class="client__icon client--icon">
-                                <use href="./img/sprite.svg#icon-logo-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="clients__item">
-                        <a href="#" class="client__link client--link link">
-                            <svg class="client__icon client--icon">
-                                <use href="./img/sprite.svg#icon-logo-2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="clients__item">
-                        <a href="#" class="client__link client--link link">
-                            <svg class="client__icon client--icon">
-                                <use href="./img/sprite.svg#icon-logo-3"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="clients__item">
-                        <a href="#" class="client__link client--link link">
-                            <svg class="client__icon client--icon">
-                                <use href="./img/sprite.svg#icon-logo-4"></use>
-                            </svg>
-                        </a>
-                    <li class="clients__item">
-                        <a href="#" class="client__link client--link link">
-                            <svg class="client__icon client--icon">
-                                <use href="./img/sprite.svg#icon-logo-5"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="clients__item">
-                        <a href="#" class="client__link client--link link">
-                            <svg class="client__icon client--icon">
-                                <use href="./img/sprite.svg#icon-logo-6"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section> -->
+      <section class="section section__clients">
+        <div class="container">
+          <h2 class="clients__title">Постоянные клиенты</h2>
+          <ul class="list clients">
+            <li class="clients__item">
+              <a href="#" class="client__link client--link link">
+                <svg class="client__icon client--icon">
+                  <use href="./img/sprite.svg#icon-logo-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="#" class="client__link client--link link">
+                <svg class="client__icon client--icon">
+                  <use href="./img/sprite.svg#icon-logo-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="#" class="client__link client--link link">
+                <svg class="client__icon client--icon">
+                  <use href="./img/sprite.svg#icon-logo-3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="#" class="client__link client--link link">
+                <svg class="client__icon client--icon">
+                  <use href="./img/sprite.svg#icon-logo-4"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="clients__item">
+              <a href="#" class="client__link client--link link">
+                <svg class="client__icon client--icon">
+                  <use href="./img/sprite.svg#icon-logo-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="#" class="client__link client--link link">
+                <svg class="client__icon client--icon">
+                  <use href="./img/sprite.svg#icon-logo-6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!----footer---->
     <!-- <footer class="footer">
