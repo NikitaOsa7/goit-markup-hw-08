@@ -1,5 +1,4 @@
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -71,17 +70,18 @@
 }
 
 .footer-form__container {
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     flex-direction: column;
   }
 
   @media screen and (min-width: 1200px) {
     margin-left: auto;
     align-items: unset;
+    display: flex;
   }
 }
 
