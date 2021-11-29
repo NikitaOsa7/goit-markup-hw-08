@@ -53,6 +53,7 @@ div {
 header {
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 768px) {
@@ -1284,14 +1285,14 @@ header {
   margin-right: 8px;
 }
 
-.filter__item:last-child {
-  margin: 0;
-}
-
 @media screen and (max-width: 767px) {
   .filter__item {
     margin-bottom: 15px;
   }
+}
+
+.filter--item {
+  margin-bottom: 0px;
 }
 
 /* ----------------------example-list----------------------- */
