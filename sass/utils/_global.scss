@@ -75,6 +75,10 @@
   justify-content: center;
   align-items: center;
 
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: auto;
     align-items: unset;
